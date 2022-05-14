@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: 1s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-showing-box-container{
+    /* display: flex; */
+    width: 30rem;
+    /* height: 25rem; */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+button{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 25px;
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
