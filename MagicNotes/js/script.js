@@ -60,7 +60,7 @@ function showNotes() {
     showNotes();
   }
   
-  
+  // Event for search input for notes
   let search = document.getElementById('searchTxt');
   search.addEventListener("input", function(){
   
