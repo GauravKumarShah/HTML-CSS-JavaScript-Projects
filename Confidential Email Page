@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+ <style>
+#email{
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  BOX-SIZING: BORDER-BOX;
+  background-color: #f454;
+  border-radius: 10px;
+}
+#confidential{
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  PADDING: 20PX;
+  MARGIN-LEFT: 100PX;
+  BORDER: 5PX SOLID BLUE;
+  TRANSFORM: ROTATE(-25DEG);
+}
+#top-secret{
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  PADDING: 20PX;
+  MARGIN-LEFT: 90PX;
+  BORDER: 5PX SOLID BLUE;
+  TRANSFORM: ROTATE(25DEG);
+}
+.blurred{
+    filter:blur(3px);
+    }
+</style>
+</head>
+<main id="email">
+<div id="confidential">CONFIDENTIAL</div>
+<P>Dear Agent <span class="blurred">Gaurav</span></P>
+<P>We have an <span class="blurred"> emergency.</span> The secret formula for our Mega Marshmallow has been compromised. This formula is what makes our marshmallows the fluffiest and most delicious.</P>
+<P>We suspect that Professor Puff is behind this. He has taken the formula to his hidden laboratory. Your mission is to infiltrate the lab and secure the formula before it's too late.</P>
+<p>Be sure to keep the <span class="blurred"> lab's location confidential.</span> Any leak of this information could jeopardize the entire operation.</p>
+<div id="top-secret">TOP SECRET</div>
+
+
+</main>
+<body>
+
+</body>
+
+</html>
