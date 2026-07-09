@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 10px;
+ }
+
+ #playing-cards::after {
+  content: "";
+  width: 180px;
+}
+
+.card {
+justify-content: space-between;
+height: 300px;
+border: 2px solid black;
+width: 180px;
+display: flex;
+line-height: .8em
+}
+
+#playing-cards::after {
+  content: "";
+  width: 380px;              
+}
+
+
+.left {
+align-self: flex-start; 
+vertical-align: top;
+font-size: 40px;
+flex-wrap: wrap;
+line-height: .8em;
+  padding: 5px;
+
+}
+
+.middle {
+display: flex;
+align-self: center;
+flex-direction: column;
+color: red;
+font-size: 40px;
+align-items: center;
+line-height: .8em;
+ }
+
+.right {
+align-self: flex-end;
+font-size: 40px;
+line-height: .8em;
+transform: rotate(180deg);
+  padding: 5px;
+}
+
+span {
+transform: rotate(180deg);
+}</style>
+</head>
+<main id="playing-cards">
+  <div class="card">
+     <div class="left">
+        A<BR>♠</div>
+      <div class="middle">♠</div>
+      <div class="right">A<br>♠</div>
+  </div>
+  <div class="card">
+    <div class="left">2<br>♣</div>
+   <div class="middle">♣<BR><span>♣</span></div>
+  <div class="right">2<br>♣</div>
+  </div>
+  <div class="card">
+    
+      <div class="left">3<br>♥</div>
+      <div class="middle">♥<BR>♥</div>
+          <div class="right">3<br>♥</div>
+  </div>
+  
+</main>
+<body>
+
+</body>
+
+</html>
