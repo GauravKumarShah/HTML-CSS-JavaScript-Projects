@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Table</title>
+    <style>
+:root {
+            --color0: #FF0000; 
+            --color1: #FFA500; 
+            --color2: #FFFF00; 
+            --color3: #008000; 
+            --color4: #0000FF; 
+            --color5: #800080; 
+            --solid-border: 2px solid #000; 
+            --dashed-border: 2px dashed #000; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .sharp td {
+            border-bottom: var(--solid-border);
+        }
+
+        .half td {
+            border-bottom: var(--dashed-border);
+        }
+
+        .available-0 {
+            background-color: var(--color0);
+        }
+
+        .available-1 {
+            background-color: var(--color1);
+        }
+
+        .available-2 {
+            background-color: var(--color2);
+        }
+
+        .available-3 {
+            background-color: var(--color3);
+        }
+
+        .available-4 {
+            background-color: var(--color4);
+        }
+
+        .available-5 {
+            background-color: var(--color5);
+        }
+
+        #legend {
+            width: 60%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        #legend span {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+     #legend-gradient {
+    height: 10px;
+    background-image: linear-gradient( 90deg,
+        var(--color0) 0%, var(--color0) 16.6%, 
+        var(--color1) 16.6%, var(--color1) 33.3%,
+        var(--color2) 33.3%, var(--color2) 50%,
+        var(--color3) 50%, var(--color3) 66.6%, 
+        var(--color4) 66.6%, var(--color4) 83.3%,
+        var(--color5) 83.3%, var(--color5) 100%
+    );
+}
+</style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th class="time">08:00 AM</th>
+            <th class="time">09:00 AM</th>
+            <th class="time">10:00 AM</th>
+        </tr>
+        <tr class="sharp">
+            <th class="time">11:00 AM</th>
+            <td class="available-0"></td>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+        </tr>
+        <tr class="half">
+            <th class="time">12:00 PM</th>
+            <td class="available-3"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+        </tr>
+        <tr class="sharp">
+            <th class="time">01:00 PM</th>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-0"></td>
+        </tr>
+        <tr class="half">
+            <th class="time">02:00 PM</th>
+            <td class="available-4"></td>
+            <td class="available-1"></td>
+            <td class="available-5"></td>
+        </tr>
+    </table>
+
+    <div id="legend">
+        <span>Availability</span>
+        <div id="legend-gradient"></div>
+    </div>
+</body>
+
+</html>
