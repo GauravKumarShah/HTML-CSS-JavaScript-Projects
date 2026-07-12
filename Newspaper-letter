@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Newspaper Layout</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas: "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  gap: 20px;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
+</head>
+
+<body>
+ <main class="newspaper-layout">
+    <header class="title">
+      <h1>The Daily Grid Times</h1>
+    </header>
+
+    <article class="feature-article">
+      <h2>Breaking News: CSS Grid Shapes the Future</h2>
+      <p>CSS Grid is revolutionizing web layouts, making it easier to design
+         complex, responsive structures without messy hacks.</p>
+    </article>
+
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/300x300" alt="Cover image"/>
+    </figure>
+
+    <article class="secondary-article">
+      <h2>Developers Celebrate Grid Layout</h2>
+      <p>Web developers worldwide are adopting CSS Grid to streamline 
+         their workflow and create more dynamic, user-friendly designs.</p>
+    </article>
+
+    <article class="small-article1">
+      <h3>Sub Article One</h3>
+      <p>A quick look at how grid-template-areas simplifies layouts.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Sub Article Two</h3>
+      <p>Tips and tricks for mastering CSS Grid in no time.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Sub Article Three</h3>
+      <p>Why grids are better than floats and flexbox in certain cases.</p>
+    </article>
+  </main>
+</body>
+
+</html>
