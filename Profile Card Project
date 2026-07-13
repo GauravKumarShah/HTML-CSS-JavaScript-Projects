@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Project</title>
+  <style>
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the card on the screen */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the profile container */
+.card {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Make the image round */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+   border: 4px solid #4f46e5;
+    margin-bottom: 20px;
+}
+
+/* Typography styles */
+.name {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 14px;
+    color: #4f46e5;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+/* Button interactive styles */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3730a3;
+}
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="" alt="Profile Picture" class="profile-img">
+        <h2 class="name">Gaurav</h2>
+        <p class="title">Front-End Developer</p>
+        <p class="bio">Passionate about building clean, accessible, and responsive user interfaces.</p>
+        <a href="#" class="btn">Connect</a>
+    </div>
+
+</body>
+</html>
